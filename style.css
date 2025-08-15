@@ -1,0 +1,49 @@
+:root{
+    --cor-fundo: #E8D8C9;
+    --cor-principal: #884702;
+    --cor-secundaria: #ad6e37;
+    --cor-destaque: #250909;
+    --cor-texto: #000000;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Adicionei uma fonte mais legível */
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada para um visual mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para destacar a caixa */
+}
+
+h1{
+    color: var(--cor-destaque);
+    text-transform: uppercase; /* Deixa o título em maiúsculas */
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo); /* O texto do botão agora é claro para contrastar com o fundo escuro */
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s, transform 0.2s; /* Adicionei transição para o `transform` */
+    cursor: pointer; /* Indica que é clicável */
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
